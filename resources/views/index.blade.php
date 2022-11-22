@@ -1,74 +1,34 @@
-<!DOCTYPE html>
-<html lang="zxx">
+@extends('layout')
+{{--<!DOCTYPE html>--}}
+{{--<html lang="zxx">--}}
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description"
-        content="Palun, Personal Portfolio, One page portfolio, HTML Template, CSS3, HTML5, Website, Portfolio template">
+{{--<head>--}}
+{{--    <meta charset="UTF-8">--}}
+{{--    <meta name="viewport" content="width=device-width, initial-scale=1.0">--}}
+{{--    <meta name="description"--}}
+{{--        content="Palun, Personal Portfolio, One page portfolio, HTML Template, CSS3, HTML5, Website, Portfolio template">--}}
 
-    <!-- title -->
-    <title>Palun - Dark Personal Portfolio HMTL5 Template</title>
+{{--    <!-- title -->--}}
+{{--    <title>Palun - Dark Personal Portfolio HMTL5 Template</title>--}}
 
-    <!-- favicon -->
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+{{--    <!-- favicon -->--}}
+{{--    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">--}}
 
     <!-- stylesheets -->
-    <link rel="stylesheet" type="text/css" href="{{asset('css/bootstrap.min.css')}}">
-    <link rel="stylesheet" type="text/css" href="{{asset('css/slick.min.css')}}">
-    <link rel="stylesheet" type="text/css" href="{{asset('css/all.min.css')}}">
-    <link rel="stylesheet" type="text/css" href="{{asset('css/magnific-popup.min.css')}}">
-    <link rel="stylesheet" type="text/css" href="{{asset('css/mean-menu.css')}}">
-    <link rel="stylesheet" type="text/css" href="{{asset('css/default.css')}}">
-    <link rel="stylesheet" type="text/css" href="{{asset('style.css')}}">
+{{--    <link rel="stylesheet" type="text/css" href="{{asset('css/bootstrap.min.css')}}">--}}
+{{--    <link rel="stylesheet" type="text/css" href="{{asset('css/slick.min.css')}}">--}}
+{{--    <link rel="stylesheet" type="text/css" href="{{asset('css/all.min.css')}}">--}}
+{{--    <link rel="stylesheet" type="text/css" href="{{asset('css/magnific-popup.min.css')}}">--}}
+{{--    <link rel="stylesheet" type="text/css" href="{{asset('css/mean-menu.css')}}">--}}
+{{--    <link rel="stylesheet" type="text/css" href="{{asset('css/default.css')}}">--}}
+{{--    <link rel="stylesheet" type="text/css" href="{{asset('style.css')}}">--}}
 
-</head>
+{{--</head>--}}
+
 
 <body>
     <!-- header area -->
-    <div class="header-area">
-        <div class="container mt-60 pl-0 pr-0">
-            <div class="row justify-content-lg-between">
-                <div class="col-xl-2 col-lg-2 col-md-2 col-sm-2 col-2 pl-xl-0">
-                    <!-- logo -->
-                    <div class="logo-area">
-                        <a href="//">
-                            <img src="http://localhost/img/logo/logo.png" alt="Logo" />
-                        </a>
-                    </div>
-                </div>
-                <div class="col-xl-6 col-lg-7 col-md-10 col-sm-8 col-8 pr-0">
-                    <div class="menu-area menu-social float-right">
-                        <ul class="list-inline pl-15">
-                            <li class="list-inline-item menu-border"><a href="#"><i class="fab fa-skype"></i></a></li>
-                            <li class="list-inline-item"><a href="#"><i class="fab fa-facebook"></i></a></li>
-                            <li class="list-inline-item"><a href="#"><i class="fab fa-twitter"></i></a></li>
-                        </ul>
-                    </div>
-                    <nav id="mobile-nav">
-                        <div class="menu-area float-right">
-                            <ul class="list-inline">
-                                <li class="list-inline-item"><a href="/">Home</a></li>
-                                <li class="list-inline-item"><a href="/#portfolio">Portfolio</a>
-                                    <ul class="sub-menu pb-10 pt-10 pl-15 pr-15">
-                                        <li><a href="portfolio-details.blade.php">Portfolio Details</a></li>
-                                    </ul>
-                                </li>
-                                <li class="list-inline-item"><a href="/#blog">Blog</a>
-                                    <ul class="sub-menu pb-10 pt-10 pl-15 pr-15">
-                                        <li><a href="blog-list.blade.php">Blog List</a></li>
-                                        <li><a href="/News">News Details</a></li>
-                                    </ul>
-                                </li>
-                                <li class="list-inline-item"><a href="/#contact">Contact</a></li>
-                            </ul>
-                        </div>
-                    </nav>
-                    <div class="mobile-menu"></div>
-                </div>
-            </div>
-        </div>
-    </div>
+
 
     <!-- header area ends -->
 
