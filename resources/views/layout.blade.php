@@ -27,7 +27,7 @@
             <div class="col-xl-2 col-lg-2 col-md-2 col-sm-2 col-2 pl-xl-0">
                 <!-- logo -->
                 <div class="logo-area">
-                    <a href="//">
+                    <a href="/">
                         <img src="http://localhost/img/logo/logo.png" alt="Logo" />
                     </a>
                 </div>
@@ -44,15 +44,15 @@
                     <div class="menu-area float-right">
                         <ul class="list-inline">
                             <li class="list-inline-item"><a href="/">Home</a></li>
-                            <li class="list-inline-item"><a href="/portfolio">Portfolio</a>
+                            <li class="list-inline-item"><a href="/#portfolio">Portfolio</a>
                                 <ul class="sub-menu pb-10 pt-10 pl-15 pr-15">
-                                    <li><a href="portfolio-details.blade.php">Portfolio Details</a></li>
+                                    <li><a href="portfolio">Portfolio Details</a></li>
                                 </ul>
                             </li>
                             <li class="list-inline-item"><a href="/#blog">Blog</a>
                                 <ul class="sub-menu pb-10 pt-10 pl-15 pr-15">
-                                    <li><a href="blog-list.blade.php">Blog List</a></li>
-                                    <li><a href="/News">News Details</a></li>
+                                    <li><a href="blog">Blog List</a></li>
+                                    <li><a href="news">News Details</a></li>
                                 </ul>
                             </li>
                             <li class="list-inline-item"><a href="/#contact">Contact</a></li>

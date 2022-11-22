@@ -25,7 +25,7 @@ Route::get(  '/blog', function () {
     return view('blog-list');
 });
 
-Route::get('/News', function () {
+Route::get('/news', function () {
     return view('news-details');
 });
 
