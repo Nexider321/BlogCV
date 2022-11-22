@@ -28,7 +28,7 @@
                     </div>
                     <div class="blog-details pl-30 mt-35 pr-30">
                         <div class="blog-title mb-10">
-                            <a href="/News">
+                            <a href="/news">
                                 <h2>The Mystery Of Positive
                                     And Negative Space...</h2>
                             </a>
@@ -38,7 +38,7 @@
                             ut labore et dolore magna qua. Ut enim ad minim veniam.
                         </p>
                         <div class="blog-button">
-                            <a href="/News">Read More &nbsp; <i class="fas fa-angle-right"></i> </a>
+                            <a href="/news">Read More &nbsp; <i class="fas fa-angle-right"></i> </a>
                         </div>
                     </div>
                 </div>
@@ -62,7 +62,7 @@
                     </div>
                     <div class="blog-details pl-30 mt-35 pr-30">
                         <div class="blog-title mb-10">
-                            <a href="/News">
+                            <a href="/news">
                                 <h2>The Mystery Of Positive
                                     And Negative Space...</h2>
                             </a>
@@ -72,7 +72,7 @@
                             dunt ut labore et dolore magna qua. Ut enim ad minim veniam.
                         </p>
                         <div class="blog-button">
-                            <a href="/News">Read More &nbsp; <i class="fas fa-angle-right"></i> </a>
+                            <a href="/news">Read More &nbsp; <i class="fas fa-angle-right"></i> </a>
                         </div>
                     </div>
                 </div>
@@ -90,7 +90,7 @@
                     </div>
 
                     <div class="blog-small-description pt-20 pb-20">
-                        <a href="/News">
+                        <a href="/news">
                             <h2>The Secrets Of Online
                                 Marketing That ...
                             </h2>
@@ -112,7 +112,7 @@
                     </div>
 
                     <div class="blog-small-description pt-20 pb-20">
-                        <a href="/News">
+                        <a href="/news">
                             <h2>The Secrets Of Online
                                 Marketing That ...
                             </h2>
@@ -134,7 +134,7 @@
                     </div>
 
                     <div class="blog-small-description pt-20 pb-20">
-                        <a href="/News">
+                        <a href="/news">
                             <h2>The Secrets Of Online
                                 Marketing That ...
                             </h2>
