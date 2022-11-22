@@ -32,7 +32,7 @@
 
     <!-- header area ends -->
 
-
+    @section('header')
     <!-- slider area -->
     <div class="slider-area">
         <div class="slider-activator">
@@ -547,101 +547,22 @@
     </div>
     <!-- news section ends -->
 
-    <!-- contact area starts -->
-    <div class="contact-area pt-120" id="contact">
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-xl-6">
-                    <div class="section-title text-center">
-                        <h3 class="section-name pc">CONTACT US</h3>
-                        <h2>Ways To Contact Me</h2>
-                        <p>
-                            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
-                            dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupida
-                            non proident, sunt in culpa qui officia
-                        </p>
-
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="container mt-55 pb-90">
-            <div class="row justify-content-center">
-
-                <div class="col-xl-3 col-lg-3 col-md-6 mb-30">
-                    <div class="contact-item">
-                        <div class="ct-item-icon float-left ml-30 mr-20">
-                            <i class="far fa-envelope"></i>
-                        </div>
-                        <a class="btn-animation" href="https://themeforest.net/user/wpsmasher">admin@jkh.com</a>
-                    </div>
-                </div>
-
-                <div class="col-xl-3 col-lg-3 col-md-6 mb-30">
-                    <div class="contact-item">
-                        <div class="ct-item-icon float-left ml-30 mr-20">
-                            <i class="fas fa-phone"></i>
-                        </div>
-                        <a class="btn-animation" href="https://themeforest.net/user/wpsmasher">+1 (818) 2489 XX</a>
-                    </div>
-                </div>
-
-                <div class="col-xl-3 col-lg-3 col-md-6 mb-30">
-                    <div class="contact-item">
-                        <div class="ct-item-icon float-left ml-30 mr-20">
-                            <i class="fab fa-skype"></i>
-                        </div>
-                        <a class="btn-animation" href="https://themeforest.net/user/wpsmasher">live:arafatjamil01</a>
-                    </div>
-                </div>
-            </div>
-            <div class="row justify-content-center">
-                <div class="col-xl-3 col-lg-3 col-md-6 mb-30">
-                    <div class="contact-item">
-                        <div class="ct-item-icon float-left ml-30 mr-20">
-                            <i class="fab fa-twitter"></i>
-                        </div>
-                        <a class="btn-animation" href="https://themeforest.net/user/wpsmasher">@wpsmasher</a>
-                    </div>
-                </div>
-                <div class="col-xl-3 col-lg-3 col-md-6 mb-30">
-                    <div class="contact-item">
-                        <div class="ct-item-icon float-left ml-30 mr-20">
-                            <i class="fab fa-dribbble"></i>
-                        </div>
-                        <a class="btn-animation" href="https://themeforest.net/user/wpsmasher">wpsmasher</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- contact area ends -->
-
-    <!-- footer copyright area starts -->
-    <div class="footer-area">
-        <div class="copyright-text text-center">
-            <p class="pt-20"><i class="fas fa-copyright mr-10"></i>Copyright - HJ | All Rights Rerved</p>
-        </div>
-
-        <div class="back-to-top">
-            <a href="#"><i class="fas fa-angle-up"></i></a>
-        </div>
-    </div>
     <!-- footer copyright area end -->
+    @endsection
 
 
     <!-- scripts -->
-    <script src="http://localhost/js/jquery-2.2.4.js"></script>
-    <script src="http://localhost/js/popper.min.js"></script>
-    <script src="http://localhost/js/bootstrap.min.js"></script>
-    <script src="http://localhost/js/jquery-1.12.4.js"></script>
-    <script src="http://localhost/js/slick.js"></script>
-    <script src="http://localhost/js/waypoint.min.js"></script>
-    <script src="http://localhost/js/countup.js"></script>
-    <script src="http://localhost/js/isotope.min.js"></script>
-    <script src="http://localhost/js/jquery-mean-menu.min.js"></script>
-    <script src="http://localhost/js/magnific-popup.js"></script>
-    <script src="http://localhost/js/script.js"></script>
+{{--    <script src="http://localhost/js/jquery-2.2.4.js"></script>--}}
+{{--    <script src="http://localhost/js/popper.min.js"></script>--}}
+{{--    <script src="http://localhost/js/bootstrap.min.js"></script>--}}
+{{--    <script src="http://localhost/js/jquery-1.12.4.js"></script>--}}
+{{--    <script src="http://localhost/js/slick.js"></script>--}}
+{{--    <script src="http://localhost/js/waypoint.min.js"></script>--}}
+{{--    <script src="http://localhost/js/countup.js"></script>--}}
+{{--    <script src="http://localhost/js/isotope.min.js"></script>--}}
+{{--    <script src="http://localhost/js/jquery-mean-menu.min.js"></script>--}}
+{{--    <script src="http://localhost/js/magnific-popup.js"></script>--}}
+{{--    <script src="http://localhost/js/script.js"></script>--}}
 </body>
 
 </html>
