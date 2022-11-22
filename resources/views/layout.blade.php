@@ -44,7 +44,7 @@
                     <div class="menu-area float-right">
                         <ul class="list-inline">
                             <li class="list-inline-item"><a href="/">Home</a></li>
-                            <li class="list-inline-item"><a href="/#portfolio">Portfolio</a>
+                            <li class="list-inline-item"><a href="/portfolio">Portfolio</a>
                                 <ul class="sub-menu pb-10 pt-10 pl-15 pr-15">
                                     <li><a href="portfolio-details.blade.php">Portfolio Details</a></li>
                                 </ul>

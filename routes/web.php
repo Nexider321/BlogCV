@@ -17,6 +17,14 @@ Route::get('/', function () {
     return view('index');
 });
 
+Route::get('/portfolio', function () {
+    return view('portfolio-details');
+});
+
+Route::get(  '/blog', function () {
+    return view('blog-list');
+});
+
 Route::get('/News', function () {
     return view('news-details');
 });
