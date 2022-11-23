@@ -6,9 +6,7 @@
                     <h3 class="section-name pc">LATEST NEWS</h3>
                     <h2>My Latest Articles</h2>
                     <p>
-                        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
-                        dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupida
-                        non proident, sunt in culpa qui officia
+
                     </p>
 
                 </div>
@@ -16,6 +14,7 @@
         </div>
 
         <div class="row mt-45 pb-90">
+            @foreach($posts as $post)
             <div class="col-xl-4 col-lg-4">
                 <div class="single-blog mb-30 pb-40">
                     <div class="blog-img">
@@ -29,54 +28,55 @@
                     <div class="blog-details pl-30 mt-35 pr-30">
                         <div class="blog-title mb-10">
                             <a href="/news">
-                                <h2>The Mystery Of Positive
-                                    And Negative Space...</h2>
+                                <h2>
+                                        {{ $post->name }}
+                                </h2>
                             </a>
                         </div>
                         <p class="mb-10">
-                            Lorem ipsum dolor sit amet, conscetur adi pisi cing elit, sed do eius tempor in cididunt
-                            ut labore et dolore magna qua. Ut enim ad minim veniam.
+                           {{ Str::limit($post->content, 50, '...') }}
                         </p>
                         <div class="blog-button">
-                            <a href="/news">Read More &nbsp; <i class="fas fa-angle-right"></i> </a>
+                            <a href="/post/{{$post->slug}}">Read More &nbsp; <i class="fas fa-angle-right"></i> </a>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="col-xl-4 col-lg-4">
-                <div class="single-blog mb-30 pb-40">
-                    <div class="blog-img">
-                        <img src="http://localhost/img/news/blog-2.jpg" alt="news item 2">
+            @endforeach
+{{--            <div class="col-xl-4 col-lg-4">--}}
+{{--                <div class="single-blog mb-30 pb-40">--}}
+{{--                    <div class="blog-img">--}}
+{{--                        <img src="http://localhost/img/news/blog-2.jpg" alt="news item 2">--}}
 
-                    </div>
-                    <div class="play-btn">
-                        <a href="https://www.youtube.com/watch?v=Mo0WEEfbmKE" class="mfp-iframe">
-                            <i class="fas fa-play"></i>
-                        </a>
-                    </div>
-                    <div class="blog-meta">
-                        <div class="date">
-                            Jun 12,20
-                        </div>
+{{--                    </div>--}}
+{{--                    <div class="play-btn">--}}
+{{--                        <a href="https://www.youtube.com/watch?v=Mo0WEEfbmKE" class="mfp-iframe">--}}
+{{--                            <i class="fas fa-play"></i>--}}
+{{--                        </a>--}}
+{{--                    </div>--}}
+{{--                    <div class="blog-meta">--}}
+{{--                        <div class="date">--}}
+{{--                            Jun 12,20--}}
+{{--                        </div>--}}
 
-                    </div>
-                    <div class="blog-details pl-30 mt-35 pr-30">
-                        <div class="blog-title mb-10">
-                            <a href="/news">
-                                <h2>The Mystery Of Positive
-                                    And Negative Space...</h2>
-                            </a>
-                        </div>
-                        <p class="mb-10">
-                            Lorem ipsum dolor sit amet, conscetur adi pisi cing elit, sed do eius tempor in cidi
-                            dunt ut labore et dolore magna qua. Ut enim ad minim veniam.
-                        </p>
-                        <div class="blog-button">
-                            <a href="/news">Read More &nbsp; <i class="fas fa-angle-right"></i> </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
+{{--                    </div>--}}
+{{--                    <div class="blog-details pl-30 mt-35 pr-30">--}}
+{{--                        <div class="blog-title mb-10">--}}
+{{--                            <a href="/news">--}}
+{{--                                <h2>The Mystery Of Positive--}}
+{{--                                    And Negative Space...</h2>--}}
+{{--                            </a>--}}
+{{--                        </div>--}}
+{{--                        <p class="mb-10">--}}
+{{--                            Lorem ipsum dolor sit amet, conscetur adi pisi cing elit, sed do eius tempor in cidi--}}
+{{--                            dunt ut labore et dolore magna qua. Ut enim ad minim veniam.--}}
+{{--                        </p>--}}
+{{--                        <div class="blog-button">--}}
+{{--                            <a href="/news">Read More &nbsp; <i class="fas fa-angle-right"></i> </a>--}}
+{{--                        </div>--}}
+{{--                    </div>--}}
+{{--                </div>--}}
+{{--            </div>--}}
             <div class="col-xl-4 col-lg-4">
                 <div class="blog-item-small pr-20">
                     <div class="blog-meta">

@@ -7,6 +7,10 @@
 
     @section('header')
     <!-- slider area -->
+
+
+
+
     <div class="slider-area">
         <div class="slider-activator">
             <div class="slide-item">
@@ -43,10 +47,11 @@
                                         Full Stack Web <br />
                                         Developer</h2>
                                     <p class="pr-20">
-                                        Lorem ipsum dolor sit amet, consectetur adip
-                                        cing elit, sed do eiusmod tempor incidid
-                                        unt ut labore et dolorepore magna aliqua.
+
+
                                     </p>
+
+
 
                                 </div>
                                 <div class="intro-button">

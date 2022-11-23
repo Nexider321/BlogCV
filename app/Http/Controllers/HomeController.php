@@ -11,12 +11,12 @@ class HomeController extends Controller
 
     public function index()
     {
-        $post = Post::where('is_published', true);
+        $posts = Post::where('is_published', true)->get();
 
 
 
         return view('index', [
-            'post' => $post
+            'posts' => $posts
         ]);
     }
 
