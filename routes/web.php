@@ -21,9 +21,13 @@ Route::get('/portfolio', function () {
     return view('portfolio-details');
 });
 
-Route::get(  '/blog', function () {
-    return view('blog-list');
+Route::get(  '/post', function () {
+    return view('post');
 });
+
+Route::get(  '/post/{slug}', [\App\Http\Controllers\PostController::class, 'show'])->name('post.show');
+
+
 
 Route::get('/news', function () {
     return view('news-details');

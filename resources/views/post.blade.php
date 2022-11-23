@@ -7,12 +7,13 @@
 @endsection
 @section('content')
     <!-- page title area starts -->
+
     <div class="page-title-area">
         <div class="container">
             <div class="row">
                 <div class="col-xl-7">
                     <div class="page-title pt-80 pb-60">
-                        <h1>Job Board Web UI / UX Design</h1>
+                        <h1>{{ $post->name }}</h1>
                         <div class="post-category">
                             <p><span class="pc">Category:</span> Web Development</p>
                         </div>
@@ -26,6 +27,7 @@
     <!-- main area starts -->
     <div class="main-area bgs pt-110 pb-120">
         <div class="container">
+            {{print_r($category)}}
             <div class="row">
                 <div class="col-xl-12">
                     <div class="news-details">
@@ -35,16 +37,7 @@
                         <h2 class="mt-20 mb-20">
                             Wireframing And Researching The Work Flow
                         </h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
-                            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostru
-                            exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute re dolor in
-                            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
-                            occaecat cupidatat non.</p>
-                        <p>Dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
-                            dolore magna aliqua. Ut enim ad minim veniam, quis nostru exercitation ullamco laboris nisi
-                            ut aliquip ex ea commodo consequat. Duis aute re dolor in
-                            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-                            Excepteur sint occaecat cupidatat non.</p>
+                        <p>{{ $post->content }}</p>
 
                         <h2 class="mt-30 mb-30">Project Gallery</h2>
 
