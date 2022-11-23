@@ -11,7 +11,7 @@ class HomeController extends Controller
 
     public function index()
     {
-        $posts = Post::where('is_published', true)->get();
+        $posts = Post::where('is_published', true)->limit(2)->get();
 
 
 

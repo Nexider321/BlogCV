@@ -180,7 +180,7 @@
     <!-- portfolio area ends -->
 
     <!-- news section starts -->
-    @include('vendor/news')
+    @include('vendor/articles')
     <!-- news section ends -->
     @endsection
     <!-- footer copyright area end -->

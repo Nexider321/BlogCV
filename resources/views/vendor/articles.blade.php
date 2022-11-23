@@ -22,7 +22,7 @@
                     </div>
                     <div class="blog-meta">
                         <div class="date">
-                            Jun 12,20
+                            {{ date_format($post->created_at, 'M d, y') }}
                         </div>
                     </div>
                     <div class="blog-details pl-30 mt-35 pr-30">
