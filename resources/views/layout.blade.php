@@ -46,7 +46,7 @@
                             <li class="list-inline-item"><a href="/">Home</a></li>
                             <li class="list-inline-item"><a href="/#portfolio">Portfolio</a>
                                 <ul class="sub-menu pb-10 pt-10 pl-15 pr-15">
-                                    <li><a href="portfolio">Portfolio Details</a></li>
+                                    <li><a href="post">Portfolio Details</a></li>
                                 </ul>
                             </li>
                             <li class="list-inline-item"><a href="/#blog">Blog</a>

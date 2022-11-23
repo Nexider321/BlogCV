@@ -15,7 +15,7 @@
                     <div class="page-title pt-80 pb-60">
                         <h1>{{ $post->name }}</h1>
                         <div class="post-category">
-                            <p><span class="pc">Category:</span> Web Development</p>
+                            <p><span class="pc">Category:</span><a href="/category/{{$category->name}}">{{$category->name}}</a> </p>
                         </div>
                     </div>
                 </div>
