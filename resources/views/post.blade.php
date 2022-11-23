@@ -14,8 +14,14 @@
                 <div class="col-xl-7">
                     <div class="page-title pt-80 pb-60">
                         <h1>{{ $post->name }}</h1>
+
                         <div class="post-category">
                             <p><span class="pc">Category:</span><a href="/category/{{$category->name}}">{{$category->name}}</a> </p>
+
+                        </div>
+                        <div class="date pt-10 pb-10 text-warning">
+                            {{ date_format($post->created_at, 'M d, Y')  }} <br>
+                            {{ date_format($post->created_at, 'H:i') }}
                         </div>
                     </div>
                 </div>
@@ -27,7 +33,7 @@
     <!-- main area starts -->
     <div class="main-area bgs pt-110 pb-120">
         <div class="container">
-            {{print_r($category)}}
+
             <div class="row">
                 <div class="col-xl-12">
                     <div class="news-details">
