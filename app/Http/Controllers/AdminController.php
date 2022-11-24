@@ -9,11 +9,13 @@ class AdminController extends Controller
     /**
      * Display a listing of the resource.
      *
-     * @return \Illuminate\Http\Response
+     * @return \Illuminate\Contracts\Foundation\Application|\Illuminate\Contracts\View\Factory|\Illuminate\Contracts\View\View
      */
     public function index()
     {
-        //
+        return view ('dashboard', [
+            'name' => 'All posts'
+        ]);
     }
 
     /**
@@ -23,7 +25,7 @@ class AdminController extends Controller
      */
     public function create()
     {
-       return view('dashboard', [
+       return view('create', [
            'name' => 'Create a post'
         ]);
     }

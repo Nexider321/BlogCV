@@ -5,15 +5,18 @@
             <div class="flex">
                 <!-- Logo -->
                 <div class="shrink-0 flex items-center">
-                    <a href="">
+                    <a href="/dashboard">
                         <x-application-logo class="block h-9 w-auto fill-current text-gray-800" />
                     </a>
                 </div>
 
                 <!-- Navigation Links -->
-                <div class="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex">
-                    <a href="dashboard/create">Edit</a>
-                    <a href="dashboard/create">Create</a>
+                <div class="hidden space-x-10 sm:-my-px sm:ml-25 sm:flex items-center px-5 py-2">
+
+                    <a href="/dashboard/edit">Edit</a>
+                    <a href="/dashboard/create">Create</a>
+
+                    <a href="/">Return to Home</a>
                 </div>
             </div>
 
