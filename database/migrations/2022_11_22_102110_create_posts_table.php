@@ -14,11 +14,11 @@ return new class extends Migration
     public function up()
     {
         Schema::create('posts', function (Blueprint $table) {
-            $table->id();
+            $table->bigIncrements('id');
             $table->timestamps();
-            $table->string('name');
+            $table->string('title');
             $table->string('slug')->unique();
-            $table->text('content');
+            $table->text('body');
             $table->string('image')->nullable();
             $table->boolean('is_published')->default(false);
             $table->bigInteger('category_id');
