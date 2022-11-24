@@ -27,7 +27,7 @@
                     </div>
                     <div class="blog-details pl-30 mt-35 pr-30">
                         <div class="blog-title mb-10">
-                            <a href="/news">
+                            <a href="/post/{{$post->slug}}">
                                 <h2>
                                         {{ $post->name }}
                                 </h2>
