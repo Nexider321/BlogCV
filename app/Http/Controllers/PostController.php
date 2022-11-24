@@ -12,7 +12,7 @@ class PostController extends Controller
     {
         $post = Post::where('is_published', true)->where('slug', $slug)->firstOrFail();
 
-        $category = Category::find(1);
+        $category = Post::first();
 
         return view('post', [
             'post' => $post,

@@ -13,8 +13,14 @@ class AdminController extends Controller
      */
     public function index()
     {
+        $posts = Post::all();
+        $categories = $posts->categories()->all();
+
+
         return view ('dashboard', [
-            'name' => 'All posts'
+            'name' => 'All posts',
+            'posts' => $posts,
+            'categories' => $categories
         ]);
     }
 

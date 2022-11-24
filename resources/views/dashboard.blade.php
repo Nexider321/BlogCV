@@ -4,15 +4,17 @@
             {{ __('Admin panel') }}
         </h2>
     </x-slot>
-
-    <div class="py-12">
+    @foreach($posts as $post)
+    <div class="py-3">
         <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
             <div class="bg-white overflow-hidden shadow-sm sm:rounded-lg">
                 <div class="p-6 text-gray-900">
-                    {{ __("TExt") }}
-
+                        {{ $post->name, }} <br>
+                        Content: {{ Str::limit($post->content, 50, '...') }} <br>
+                        Is Published: {{ $post->is_published }} <br>
                 </div>
             </div>
         </div>
     </div>
+    @endforeach
 </x-app-layout>
