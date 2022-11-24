@@ -9,10 +9,11 @@ class Category extends Model
 {
     use HasFactory;
 
-protected $table = 'Categories';
+    protected $table = 'categories';
 
 
-    public function posts()
+
+   public function posts()
     {
 
 

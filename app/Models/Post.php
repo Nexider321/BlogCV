@@ -13,11 +13,11 @@ class Post extends Model
     protected $fillable = ['name', 'content', 'slug', 'logo', 'category_id', 'is_published'];
     public function Tags()
     {
-        return $this->hasMany(Tag::Class);
+        return $this->belongsToMany(Tag::Class);
     }
 
     public function category()
     {
-        return $this->belongsTo(Categories::class);
+        return $this->belongsTo(Category::class);
     }
 }
