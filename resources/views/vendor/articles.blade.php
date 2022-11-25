@@ -18,7 +18,7 @@
             <div class="col-xl-4 col-lg-4">
                 <div class="single-blog mb-30 pb-40">
                     <div class="blog-img">
-                        <img src="http://localhost/img/news/blog-1.jpg" alt="news item 1">
+                        <img src="/{{$post->image}}" alt="news item 1">
                     </div>
                     <div class="blog-meta">
                         <div class="date">
@@ -29,12 +29,12 @@
                         <div class="blog-title mb-10">
                             <a href="/post/{{$post->slug}}">
                                 <h2>
-                                        {{ $post->name }}
+                                        {{ $post->title }}
                                 </h2>
                             </a>
                         </div>
                         <p class="mb-10">
-                           {{ Str::limit($post->content, 50, '...') }}
+                           {{ Str::limit($post->body, 50, '...') }}
                         </p>
                         <div class="blog-button">
                             <a href="/post/{{$post->slug}}">Read More &nbsp; <i class="fas fa-angle-right"></i> </a>

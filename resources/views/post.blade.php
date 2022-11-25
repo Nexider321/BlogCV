@@ -37,36 +37,30 @@
             <div class="row">
                 <div class="col-xl-12">
                     <div class="news-details">
-                        <div class="news-details-img mb-30">
+                        <div class="news-details-img mb-10">
                             <img src="/{{ $post->image }}" alt="news details 1">
                         </div>
-                        <h2 class="mt-20 mb-20">
-                            Wireframing And Researching The Work Flow
+                        <h2 class="mt-20 mb-20 text-center">
+                           {{ $post->title }}
                         </h2>
-                        <p>{{ $post->body }}</p>
+                        <p class="text-center">{{ $post->body }}</p>
 
-                        <h2 class="mt-30 mb-30">Project Gallery</h2>
+{{--                        <div class="project-gallery mb-100 mt-30">--}}
+{{--                            <div class="row">--}}
+{{--                                <div class="col-xl-7 col-lg-7">--}}
+{{--                                    <img class="mb-30" src="http://localhost/img/projects/pdet-1.jpg" alt="pdet1">--}}
+{{--                                    <img class="mb-30" src="http://localhost/img/projects/pdet-3.jpg" alt="pdet2">--}}
+{{--                                </div>--}}
 
-                        <p>Dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
-                            dolore magna aliqua. Ut enim ad minim veniam, quis nostru exercitation ullamco laboris nisi
-                            ut aliquip ex ea commodo.</p>
-
-                        <div class="project-gallery mb-100 mt-30">
-                            <div class="row">
-                                <div class="col-xl-7 col-lg-7">
-                                    <img class="mb-30" src="http://localhost/img/projects/pdet-1.jpg" alt="pdet1">
-                                    <img class="mb-30" src="http://localhost/img/projects/pdet-3.jpg" alt="pdet2">
-                                </div>
-
-                                <div class="col-xl-5 col-lg-5">
-                                    <img class="mb-30" src="http://localhost/img/projects/pdet-2.jpg" alt="pdet3">
-                                    <img class="mb-30" src="http://localhost/img/projects/pdet-4.jpg" alt="pdet-4">
-                                </div>
-                            </div>
-                        </div>
+{{--                                <div class="col-xl-5 col-lg-5">--}}
+{{--                                    <img class="mb-30" src="http://localhost/img/projects/pdet-2.jpg" alt="pdet3">--}}
+{{--                                    <img class="mb-30" src="http://localhost/img/projects/pdet-4.jpg" alt="pdet-4">--}}
+{{--                                </div>--}}
+{{--                            </div>--}}
+{{--                        </div>--}}
 
                     </div>
-                    <hr />
+                    <hr/>
                 </div>
             </div>
 
