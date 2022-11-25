@@ -38,7 +38,7 @@
                 <div class="col-xl-12">
                     <div class="news-details">
                         <div class="news-details-img mb-30">
-                            <img src="http://localhost/img/projects/project-details.jpg" alt="news details 1">
+                            <img src="/{{ $post->image }}" alt="news details 1">
                         </div>
                         <h2 class="mt-20 mb-20">
                             Wireframing And Researching The Work Flow

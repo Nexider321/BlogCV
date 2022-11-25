@@ -33,6 +33,10 @@ Route::get('/news', function () {
 
 
 
+Route::get('/link', function () {
+    Artisan::call('storage:link');
+});
+
 Route::resource('/dashboard', \App\Http\Controllers\AdminController::class );
 
 Route::middleware('auth')->group(function () {
