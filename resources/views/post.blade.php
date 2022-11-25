@@ -13,7 +13,7 @@
             <div class="row">
                 <div class="col-xl-7">
                     <div class="page-title pt-80 pb-60">
-                        <h1>{{ $post->name }}</h1>
+                        <h1>{{ $post->title }}</h1>
 
                         <div class="post-category">
                             <p><span class="pc">Category:</span><a href="/category/{{$category->name}}">{{$category->name}}</a> </p>
@@ -43,7 +43,7 @@
                         <h2 class="mt-20 mb-20">
                             Wireframing And Researching The Work Flow
                         </h2>
-                        <p>{{ $post->content }}</p>
+                        <p>{{ $post->body }}</p>
 
                         <h2 class="mt-30 mb-30">Project Gallery</h2>
 
@@ -75,9 +75,9 @@
                     <h4>Related Tags</h4>
                     <div class="tags">
                         <ul class="list-inline">
-                            <li class="list-inline-item"><a href="#">Code</a></li>
-                            <li class="list-inline-item"><a href="#">IDE</a></li>
-                            <li class="list-inline-item"><a href="#">VSCode</a></li>
+                            @foreach($tags as $tag)
+                            <li class="list-inline-item"><a href="/tags/{{$tag->name}}">{{$tag->name}}</a></li>
+                            @endforeach
                         </ul>
                     </div>
                 </div>

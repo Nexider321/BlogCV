@@ -12,11 +12,13 @@ class PostController extends Controller
     {
         $post = Post::where('is_published', true)->where('slug', $slug)->firstOrFail();
 
-        $category = Post::first();
+        $category = $post->category;
 
+        $tags = $post->tags;
         return view('post', [
             'post' => $post,
             'category' => $category,
+            'tags' => $tags,
         ]);
     }
 
