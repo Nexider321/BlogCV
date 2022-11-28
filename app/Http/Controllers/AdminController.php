@@ -2,6 +2,8 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Category;
+use App\Models\Tag;
 use Illuminate\Http\Request;
 use App\Models\Post;
 class AdminController extends Controller
@@ -14,13 +16,13 @@ class AdminController extends Controller
     public function index()
     {
         $posts = Post::all();
-        $categories = $posts->categories()->all();
-
+        $tags = Tag::all();
 
         return view ('dashboard', [
             'name' => 'All posts',
-            'posts' => $posts,
-            'categories' => $categories
+            'posts' => Post::all(),
+            'tags' => $tags
+
         ]);
     }
 
@@ -31,7 +33,7 @@ class AdminController extends Controller
      */
     public function create()
     {
-       return view('create', [
+       return view('admin.posts.create', [
            'name' => 'Create a post'
         ]);
     }
@@ -44,27 +46,26 @@ class AdminController extends Controller
      */
     public function store(Request $request)
     {
-        $name = $request->input('name');
-        $content = $request->input('content');
+        $name = $request->input('title');
+        $content = $request->input('body');
         $category = $request->input('category');
-
+        $image = $request->file('image')->store('images', 'public');
 
         $post = new Post;
-        $post->name = $name;
-        $post->content = $content;
+        $post->title = $name;
+        $post->body = $content;
         $post->slug = $name;
         $post->category_id = $category;
         $post->is_published = $category;
-//
-//        $logo_path = $request->file('logo')->store('images', 'public');
-//        $post->logo = $logo_path;
+
+        $post->image = $image;
 
 
-        $post->save();
+        $post->update();
 
         $post = Post::all()->first;
 
-        return view('dashboard', [
+        return view('admin.posts.create', [
             'name' => $post->name,
             'content' => $post->content,
             'slug' => $post->name,
@@ -87,11 +88,16 @@ class AdminController extends Controller
      * Show the form for editing the specified resource.
      *
      * @param  int  $id
-     * @return \Illuminate\Http\Response
+     * @return \Illuminate\Contracts\Foundation\Application|\Illuminate\Contracts\View\Factory|\Illuminate\Contracts\View\View
      */
     public function edit($id)
     {
-        //
+        $post = Post::where('id', $id)->firstOrFail();
+
+
+        return view('admin.posts.edit', [
+            'post' => $post,
+        ]);
     }
 
     /**
@@ -99,11 +105,33 @@ class AdminController extends Controller
      *
      * @param  \Illuminate\Http\Request  $request
      * @param  int  $id
-     * @return \Illuminate\Http\Response
+     * @return \Illuminate\Contracts\Foundation\Application|\Illuminate\Contracts\View\Factory|\Illuminate\Contracts\View\View
      */
     public function update(Request $request, $id)
     {
-        //
+        $name = $request->input('title');
+        $content = $request->input('body');
+        $category = $request->input('category');
+        $image = $request->file('image')->store('images', 'public');
+
+        $post = new Post;
+        $post->title = $name;
+        $post->body = $content;
+        $post->slug = $name;
+        $post->category_id = $category;
+        $post->is_published = $category;
+//
+
+        $post->image = $image;
+
+
+        $post->update();
+
+        $posts = Post::all()->first;
+
+        return view('dashboard', [
+            'posts' => $posts
+        ]);
     }
 
     /**

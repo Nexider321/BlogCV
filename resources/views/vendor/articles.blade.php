@@ -27,7 +27,7 @@
                     </div>
                     <div class="blog-details pl-30 mt-35 pr-30">
                         <div class="blog-title mb-10">
-                            <a href="/post/{{$post->slug}}">
+                            <a href="/post/{{$post->id}}">
                                 <h2>
                                         {{ $post->title }}
                                 </h2>
@@ -37,7 +37,7 @@
                            {{ Str::limit($post->body, 50, '...') }}
                         </p>
                         <div class="blog-button">
-                            <a href="/post/{{$post->slug}}">Read More &nbsp; <i class="fas fa-angle-right"></i> </a>
+                            <a href="/post/{{$post->id}}">Read More &nbsp; <i class="fas fa-angle-right"></i> </a>
                         </div>
                     </div>
                 </div>

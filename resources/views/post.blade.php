@@ -16,7 +16,7 @@
                         <h1>{{ $post->title }}</h1>
 
                         <div class="post-category">
-                            <p><span class="pc">Category:</span><a href="/category/{{$category->name}}">{{$category->name}}</a> </p>
+                            <p><span class="pc">Category:</span><a href="/category/{{$post->category->name}}">{{$post->category->name}}</a> </p>
 
                         </div>
                         <div class="date pt-10 pb-10 text-warning">
@@ -69,7 +69,7 @@
                     <h4>Related Tags</h4>
                     <div class="tags">
                         <ul class="list-inline">
-                            @foreach($tags as $tag)
+                            @foreach($post->tags as $tag)
                             <li class="list-inline-item"><a href="/tags/{{$tag->name}}">{{$tag->name}}</a></li>
                             @endforeach
                         </ul>

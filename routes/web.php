@@ -23,13 +23,18 @@ Route::get(  '/post', function () {
     return view('post');
 });
 
-Route::get(  '/post/{slug}', [\App\Http\Controllers\PostController::class, 'show'])->name('post.show');
+Route::get(  '/post/{id}', [\App\Http\Controllers\PostController::class, 'show'])->name('post.show');
 
+Route::get('/edit/{id}', [\App\Http\Controllers\AdminController::class, 'edit']);
 
+Route::patch('/dashboard/{id}', [\App\Http\Controllers\AdminController::class, 'update']);
+
+Route::get('/posts', [\App\Http\Controllers\PostController::class, 'index']);
 
 Route::get('/news', function () {
     return view('news-details');
 });
+
 
 
 

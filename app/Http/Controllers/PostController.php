@@ -8,17 +8,23 @@ use App\Models\Post;
 
 class PostController extends Controller
 {
-    public function show($slug)
+    public function show($id)
     {
-        $post = Post::where('is_published', true)->where('slug', $slug)->firstOrFail();
-
-        $category = $post->category;
-
-        $tags = $post->tags;
+        $post = Post::where('is_published', true)->where('id', $id)->firstOrFail();
         return view('post', [
             'post' => $post,
-            'category' => $category,
-            'tags' => $tags,
+        ]);
+    }
+
+    public function index()
+    {
+        $posts = Post::where('is_published', true)->limit(10)->get();
+
+
+
+        return view('posts', [
+            'posts' => $posts,
+
         ]);
     }
 

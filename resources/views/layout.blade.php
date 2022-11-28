@@ -46,13 +46,13 @@
                             <li class="list-inline-item"><a href="/">Home</a></li>
                             <li class="list-inline-item"><a href="/#portfolio">Portfolio</a>
                                 <ul class="sub-menu pb-10 pt-10 pl-15 pr-15">
-                                    <li><a href="/post/PHP">Portfolio Details</a></li>
+                                    <li><a href="/post/1">Portfolio Details</a></li>
                                 </ul>
                             </li>
                             <li class="list-inline-item"><a href="/#blog">Blog</a>
                                 <ul class="sub-menu pb-10 pt-10 pl-15 pr-15">
-                                    <li><a href="/post/PHP">Blog List</a></li>
-                                    <li><a href="news">News Details</a></li>
+                                    <li><a href="/posts/">Blog List</a></li>
+
                                 </ul>
                             </li>
                             <li class="list-inline-item"><a href="/#contact">Contact</a></li>
